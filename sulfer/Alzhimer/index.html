@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alzheimer's Wellness Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Markdown Parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Alzheimer's Wellness Assistant</h1>
+            <p class="subtitle">AI-powered analysis for educational and wellness purposes</p>
+        </header>
+
+        <main>
+            <div class="upload-section card">
+                <div class="drop-zone" id="dropZone">
+                    <span class="icon">📁</span>
+                    <p>Drag & drop an MRI image here, or click to select</p>
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                </div>
+                <div class="preview-container" id="previewContainer" style="display: none;">
+                    <img id="imagePreview" src="" alt="MRI Preview">
+                    <button id="removeImage" class="icon-btn">×</button>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="generateBtn" class="primary-btn" disabled>Generate Report</button>
+            </div>
+
+            <div id="loading" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p id="loadingText">Analyzing image...</p>
+            </div>
+
+            <div id="results" class="results-section" style="display: none;">
+                <div class="card model-output">
+                    <h2>Model Probabilities</h2>
+                    <div id="probabilityBars"></div>
+                </div>
+
+                <div class="card report-output">
+                    <h2>Wellness Report</h2>
+                    <div id="reportContent" class="markdown-body"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p class="disclaimer">Disclaimer: This tool is for educational purposes only and does not provide medical diagnosis. Always consult a qualified healthcare professional.</p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+      }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
