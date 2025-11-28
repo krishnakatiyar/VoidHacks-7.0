@@ -1,0 +1,154 @@
+{
+  "session_id": "test_high_3",
+  "created_at": "2025-11-28T17:38:03.618904",
+  "features": {
+    "forget_recent": "error_skipped",
+    "duration_months": "error_skipped",
+    "daily_task_difficulty": "error_skipped",
+    "confused_time_place": "yes",
+    "family_history": "error_skipped",
+    "diabetes": "error_skipped",
+    "hypertension": "error_skipped",
+    "disorientation_freq": "error_skipped",
+    "sleep_hours": "error_skipped",
+    "mood_low": "error_skipped",
+    "weight_change": "error_skipped"
+  },
+  "normalized_features": {
+    "forget_recent": 0.0,
+    "duration_months": 0.0,
+    "daily_task_difficulty": 0.0,
+    "confused_time_place": 1.0,
+    "family_history": 0.0,
+    "diabetes": 0.0,
+    "hypertension": 0.0,
+    "disorientation_freq": 0.0,
+    "sleep_hours": 0.0,
+    "mood_low": 0.0,
+    "weight_change": 0.0
+  },
+  "questions_asked": [
+    {
+      "q": "forget_recent",
+      "answer": "Yes",
+      "ts": "2025-11-28T17:38:04.422063"
+    },
+    {
+      "q": "duration_months",
+      "answer": "Yes",
+      "ts": "2025-11-28T17:38:04.730085"
+    },
+    {
+      "q": "daily_task_difficulty",
+      "answer": "Yes",
+      "ts": "2025-11-28T17:38:07.086572"
+    },
+    {
+      "q": "confused_time_place",
+      "answer": "Yes",
+      "ts": "2025-11-28T17:38:08.129384"
+    },
+    {
+      "q": "family_history",
+      "answer": "Don't know where I am",
+      "ts": "2025-11-28T17:46:59.676714"
+    },
+    {
+      "q": "family_history",
+      "answer": "Don't know where I am",
+      "ts": "2025-11-28T18:05:02.684641"
+    }
+  ],
+  "rounds": 5,
+  "is_finished": true,
+  "final_report": {
+    "type": "final_report",
+    "detected_condition": "AlzheimerRisk",
+    "risk_level": "Moderate",
+    "probability": 0.41,
+    "symptom_trigger_report": "Experiencing confusion about time and place can be triggered by factors like medication side effects, potential infections such as UTIs, vitamin deficiencies, or even dehydration. Addressing these potential triggers through proper hydration, regular check-ups, and a balanced diet may help reduce these instances. Remember to discuss these symptoms with your healthcare provider for a thorough evaluation.",
+    "exercise_meditation_yoga_plan": [
+      {
+        "name": "Brisk Walking",
+        "duration_mins": 30,
+        "frequency": "5 days/week"
+      },
+      {
+        "name": "Anulom Vilom (Pranayama)",
+        "duration_mins": 10,
+        "frequency": "daily"
+      },
+      {
+        "name": "Vrikshasana (Tree Pose)",
+        "duration_mins": 5,
+        "frequency": "alternate days"
+      },
+      {
+        "name": "5-Minute Breath Focus",
+        "duration_mins": 5,
+        "frequency": "daily"
+      }
+    ],
+    "safe_medicine_info": [
+      {
+        "name": "Vitamin B12",
+        "short_note": "May help cognitive health if deficient. Consult your doctor before starting."
+      },
+      {
+        "name": "Omega-3 Fatty Acids",
+        "short_note": "Supports brain health. Consult doctor if on blood thinners."
+      },
+      {
+        "name": "Vitamin D3",
+        "short_note": "Essential for brain function. Check levels with a doctor first."
+      }
+    ],
+    "motivation": "Taking care of your brain health is a marathon, not a sprint! Let's work together to keep your mind sharp and happy.",
+    "disclaimer": "I am an AI assistant, not a doctor. Consult a specialist for diagnosis and treatment.",
+    "session_summary": {
+      "features": {
+        "forget_recent": 0.0,
+        "duration_months": 0.0,
+        "daily_task_difficulty": 0.0,
+        "confused_time_place": 1.0,
+        "family_history": 0.0,
+        "diabetes": 0.0,
+        "hypertension": 0.0,
+        "disorientation_freq": 0.0,
+        "sleep_hours": 0.0,
+        "mood_low": 0.0,
+        "weight_change": 0.0
+      },
+      "questions_asked": [
+        {
+          "q": "forget_recent",
+          "answer": "error_skipped",
+          "ts": "2025-11-28T17:38:04.422063"
+        },
+        {
+          "q": "duration_months",
+          "answer": "error_skipped",
+          "ts": "2025-11-28T17:38:04.730085"
+        },
+        {
+          "q": "daily_task_difficulty",
+          "answer": "error_skipped",
+          "ts": "2025-11-28T17:38:07.086572"
+        },
+        {
+          "q": "confused_time_place",
+          "answer": "yes",
+          "ts": "2025-11-28T17:38:08.129384"
+        },
+        {
+          "q": "family_history",
+          "answer": "error_skipped",
+          "ts": "2025-11-28T17:46:59.676714"
+        }
+      ],
+      "rounds": 5
+    },
+    "session_id": "test_high_3"
+  },
+  "last_question_target": "family_history"
+}

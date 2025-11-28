@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Vitamin B12",
+        "short_note": "May help cognitive health if deficient. Consult your doctor before starting.",
+        "common_cautions": "Generally safe. High doses should be monitored by a doctor.",
+        "interactions": "Metformin, proton pump inhibitors."
+    },
+    {
+        "name": "Omega-3 Fatty Acids",
+        "short_note": "Supports brain health. Consult doctor if on blood thinners.",
+        "common_cautions": "May increase bleeding risk.",
+        "interactions": "Blood thinners (Warfarin, Aspirin)."
+    },
+    {
+        "name": "Vitamin D3",
+        "short_note": "Essential for brain function. Check levels with a doctor first.",
+        "common_cautions": "Too much can cause toxicity.",
+        "interactions": "Steroids, some heart medications."
+    }
+]

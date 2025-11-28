@@ -241,7 +241,7 @@ async function predict() {
             }
 
             labelItem.classList.remove('active');
-            labelItem.style.background = 'white';
+            // labelItem.style.background = 'white'; // Removed to allow CSS styling
         }
     }
 
@@ -249,7 +249,7 @@ async function predict() {
         const activeItem = document.getElementById(`label-${bestClassIndex}`);
         if (activeItem) {
             activeItem.classList.add('active');
-            activeItem.style.background = '#e0f7fa';
+            // activeItem.style.background = '#e0f7fa'; // Removed to allow CSS styling
         }
     }
 

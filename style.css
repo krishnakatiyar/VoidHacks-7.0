@@ -1,10 +1,19 @@
 :root {
-    --primary-bg: #e0f7fa;
-    --accent-color: #4dd0e1;
-    --text-color: #006064;
-    --glass-bg: rgba(255, 255, 255, 0.25);
-    --glass-border: rgba(255, 255, 255, 0.5);
-    --shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+    /* VitaTrack Theme Colors */
+    --primary-bg: #020617;
+    /* slate-950 */
+    --accent-color: #10b981;
+    /* emerald-500 */
+    --secondary-accent: #6366f1;
+    /* indigo-500 */
+    --text-color: #e2e8f0;
+    /* slate-200 */
+    --glass-bg: rgba(15, 23, 42, 0.6);
+    /* slate-900/60 */
+    --glass-border: rgba(51, 65, 85, 0.5);
+    /* slate-700/50 */
+    --shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    --nav-bg: rgba(2, 6, 23, 0.7);
 }
 
 * {
@@ -15,7 +24,8 @@
 
 body {
     font-family: 'Outfit', sans-serif;
-    background: linear-gradient(135deg, #e0f7fa 0%, #80deea 100%);
+    /* Dark gradient background */
+    background: radial-gradient(circle at top left, #1e1b4b, #020617);
     color: var(--text-color);
     min-height: 100vh;
     overflow-x: hidden;
@@ -28,6 +38,8 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
+    opacity: 0.3;
+    /* Lower opacity for particles in dark mode */
 }
 
 /* Navigation */
@@ -39,9 +51,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: var(--nav-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     z-index: 100;
     border-bottom: 1px solid var(--glass-border);
 }
@@ -49,7 +61,9 @@ body {
 .logo {
     font-size: 1.8rem;
     font-weight: 800;
-    color: #006064;
+    background: linear-gradient(to right, #fff, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     letter-spacing: 1px;
 }
 
@@ -60,7 +74,8 @@ body {
 
 .nav-item {
     text-decoration: none;
-    color: #00838f;
+    color: #94a3b8;
+    /* slate-400 */
     font-weight: 600;
     font-size: 1.1rem;
     transition: color 0.3s ease;
@@ -69,13 +84,12 @@ body {
 
 .nav-item:hover,
 .nav-item.active {
-    color: #004d40;
+    color: var(--accent-color);
 }
 
 /* Main Content Area */
 main {
     padding-top: 80px;
-    /* Space for nav */
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -99,7 +113,6 @@ section.active-section {
     opacity: 1;
     pointer-events: all;
     position: relative;
-    /* Allow scrolling if needed */
 }
 
 /* Hero Section */
@@ -107,7 +120,7 @@ section.active-section {
     text-align: center;
     padding: 3rem;
     background: var(--glass-bg);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(16px);
     border-radius: 30px;
     border: 1px solid var(--glass-border);
     box-shadow: var(--shadow);
@@ -116,10 +129,12 @@ section.active-section {
 .hero-content h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
+    color: #fff;
 }
 
 .gradient-text {
-    background: linear-gradient(45deg, #00acc1, #26c6da);
+    background: linear-gradient(45deg, #34d399, #10b981);
+    /* Emerald gradient */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -143,20 +158,20 @@ section.active-section {
 }
 
 .primary-btn {
-    background: linear-gradient(45deg, #26c6da, #00bcd4);
+    background: linear-gradient(45deg, #10b981, #059669);
     color: white;
-    box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
 }
 
 .secondary-btn {
-    background: white;
-    color: #00838f;
-    border: 2px solid #b2ebf2;
+    background: transparent;
+    color: #10b981;
+    border: 2px solid #10b981;
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 188, 212, 0.4);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
 }
 
 /* Yoga App Section */
@@ -182,10 +197,11 @@ section.active-section {
     min-height: 400px;
     border-radius: 16px;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.05);
+    background: rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid var(--glass-border);
 }
 
 canvas {
@@ -216,10 +232,11 @@ canvas {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(128, 222, 234, 0.8) 0%, rgba(38, 198, 218, 0.4) 70%);
+    /* Darker breathing circle */
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.4) 0%, rgba(6, 78, 59, 0.1) 70%);
     transform: scale(0.5);
     transition: transform 4s ease-in-out;
-    /* Default breathing rhythm */
+    border: 1px solid rgba(16, 185, 129, 0.2);
 }
 
 .circle.inhale {
@@ -235,12 +252,12 @@ canvas {
     font-size: 2rem;
     font-weight: 600;
     color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .timer {
     font-size: 1.5rem;
-    color: #006064;
+    color: #34d399;
 }
 
 /* Transitions */
@@ -250,7 +267,7 @@ canvas {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #e0f7fa;
+    background: #020617;
     z-index: 200;
     transform: translateY(100%);
     pointer-events: none;
@@ -269,4 +286,40 @@ canvas {
     .glass-nav {
         padding: 1rem;
     }
+}
+
+/* Prediction Labels */
+.label-item {
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text-color);
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+}
+
+.label-item span:first-child {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.label-item .prob {
+    font-family: monospace;
+    color: #94a3b8;
+}
+
+.label-item.active {
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid var(--accent-color);
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.1);
+    transform: translateX(5px);
+}
+
+.label-item.active .prob {
+    color: var(--accent-color);
+    font-weight: bold;
 }
