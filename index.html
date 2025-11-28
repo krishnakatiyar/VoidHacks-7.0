@@ -4,51 +4,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZenFlow - Yoga Pose Detection</title>
+  <title>ZenFlow - Find Your Balance</title>
   <link rel="stylesheet" href="style.css">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <div class="scene">
-    <div class="container">
-      <header class="header">
-        <h1>ZenFlow</h1>
-        <p>Find your balance</p>
-      </header>
-
-      <div class="main-content">
-        <div class="card webcam-card">
-          <div class="card-content">
-            <div id="webcam-container"></div>
-            <div class="overlay">
-              <div class="status-indicator">Waiting for camera...</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card info-card">
-          <div class="card-content">
-            <h2>Current Pose</h2>
-            <div id="label-container"></div>
-            <div class="confidence-meter">
-              <div class="confidence-bar"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="controls">
-        <button id="start-btn" class="btn">Start Session</button>
-      </div>
-    </div>
-  </div>
-
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
   <!-- Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@0.8/dist/teachablemachine-pose.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+
+<body data-barba="wrapper">
+
+  <div id="particles-js"></div>
+
+  <main data-barba="container" data-barba-namespace="home">
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+      <div class="logo">ZenFlow</div>
+      <div class="nav-links">
+        <a href="#" class="nav-item active" data-target="home">Home</a>
+        <a href="#" class="nav-item" data-target="yoga">Yoga</a>
+        <a href="#" class="nav-item" data-target="breathe">Breathe</a>
+      </div>
+    </nav>
+
+    <!-- Section: Home / Hero -->
+    <section id="home-section" class="active-section">
+      <div class="hero-content parallax-layer" data-depth="0.2">
+        <h1>Find Your <span class="gradient-text">Flow</span></h1>
+        <p>AI-powered yoga correction & mindfulness.</p>
+        <div class="hero-btns">
+          <button class="btn primary-btn" onclick="navigateTo('yoga')">Start Yoga</button>
+          <button class="btn secondary-btn" onclick="navigateTo('breathe')">Breathe</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Yoga App -->
+    <section id="yoga-section" class="hidden-section">
+      <div class="app-container">
+        <div class="card webcam-card parallax-layer" data-depth="0.1">
+          <div id="webcam-container">
+            <div class="placeholder-text">Camera Feed</div>
+          </div>
+        </div>
+
+        <div class="card info-card parallax-layer" data-depth="0.15">
+          <h2>Current Pose</h2>
+          <div id="label-container"></div>
+          <div class="controls">
+            <button id="start-btn" class="btn primary-btn">Start Session</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Breathing -->
+    <section id="breathe-section" class="hidden-section">
+      <div class="breathing-container parallax-layer" data-depth="0.1">
+        <div class="circle-container">
+          <div class="circle"></div>
+          <div class="instruction-text" id="breath-text">Inhale</div>
+        </div>
+        <div class="timer" id="breath-timer">4s</div>
+        <button class="btn secondary-btn" onclick="toggleBreathing()">Start/Stop</button>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="transition-overlay"></div>
+
   <script src="script.js"></script>
 </body>
 
