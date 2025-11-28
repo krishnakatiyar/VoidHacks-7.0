@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Brisk Walking",
+        "duration_mins": 30,
+        "frequency": "5 days/week",
+        "description": "Simple brisk walking to improve cardiovascular health and blood flow to the brain."
+    },
+    {
+        "name": "Anulom Vilom (Pranayama)",
+        "duration_mins": 10,
+        "frequency": "daily",
+        "description": "Alternate nostril breathing to reduce stress and improve focus."
+    },
+    {
+        "name": "Vrikshasana (Tree Pose)",
+        "duration_mins": 5,
+        "frequency": "alternate days",
+        "description": "Balancing pose that improves concentration and coordination."
+    },
+    {
+        "name": "Bhramari Pranayama (Humming Bee Breath)",
+        "duration_mins": 5,
+        "frequency": "daily",
+        "description": "Calming breathing technique to reduce anxiety and agitation."
+    },
+    {
+        "name": "Shavasana (Corpse Pose)",
+        "duration_mins": 10,
+        "frequency": "daily",
+        "description": "Deep relaxation pose to lower stress hormones."
+    },
+    {
+        "name": "Chair Yoga",
+        "duration_mins": 15,
+        "frequency": "3 days/week",
+        "description": "Gentle stretching while seated, suitable for those with limited mobility."
+    }
+]

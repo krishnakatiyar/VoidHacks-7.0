@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Vitamin B12",
+        "short_note": "May help cognitive health if deficient. Consult physician before use.",
+        "dosage_info": "Typical OTC dose: 500-1000 mcg daily. Consult doctor for specific needs."
+    },
+    {
+        "name": "Omega-3 Fatty Acids (Fish Oil)",
+        "short_note": "Supports brain health. Consult doctor if on blood thinners.",
+        "dosage_info": "Typical OTC dose: 1000 mg daily. Consult doctor."
+    },
+    {
+        "name": "Vitamin D3",
+        "short_note": "Essential for brain function. Check levels with a doctor first.",
+        "dosage_info": "Typical OTC dose: 1000-2000 IU daily. Consult doctor."
+    },
+    {
+        "name": "Multivitamin (Senior Formula)",
+        "short_note": "General nutritional support. Ensure it is iron-free if recommended by doctor.",
+        "dosage_info": "One tablet daily with food. Consult doctor."
+    }
+]

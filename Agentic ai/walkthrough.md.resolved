@@ -1,0 +1,52 @@
+# Alzheimer's Triage Agent - Walkthrough
+
+I have built the specialized **Alzheimer's Triage Agent** following the authoritative spec. It uses a structured 1-question-at-a-time approach, Indian-friendly content, and a hybrid scoring system.
+
+## 📂 Project Structure
+The project is located in `f:\Void hacks\VoidHacks-7.0\Agentic ai`.
+
+- **`alzheimer_agent.py`**: Core logic for the Alzheimer's agent.
+- **`knowledge_base/`**: JSON files for exercises, medicines, and triggers.
+- **`main.py`**: FastAPI app with `/chat/alzheimer` endpoint.
+- **`alzheimer_demo.ipynb`**: Demo notebook.
+- **`test_alzheimer.py`**: Unit tests.
+
+## 🚀 How to Run
+
+### 1. Setup Environment
+```bash
+pip install -r "f:\Void hacks\VoidHacks-7.0\Agentic ai\requirements.txt"
+```
+
+### 2. Set API Key
+Ensure `GOOGLE_API_KEY` is set in your environment or `.env` file.
+
+### 3. Run the Demo Notebook
+Open `alzheimer_demo.ipynb` to see the agent in action. It simulates a user with memory issues and shows the structured follow-up questions and final report.
+
+### 4. Run the API Server
+```bash
+cd "f:\Void hacks\VoidHacks-7.0\Agentic ai"
+uvicorn main:app --reload
+```
+The Alzheimer's endpoint is `POST /chat/alzheimer`.
+
+Example Request:
+```json
+{
+  "message": "I keep forgetting recent conversations."
+}
+```
+
+### 5. Run Tests
+To verify the logic and safety guardrails:
+```bash
+python "f:\Void hacks\VoidHacks-7.0\Agentic ai\test_alzheimer.py"
+```
+
+## 🧠 Key Features Implemented
+- **Structured Mode**: Asks one question at a time based on information gain.
+- **Indian-Friendly**: Recommends Anulom Vilom, Vrikshasana, etc.
+- **Hybrid Scoring**: Combines Rule Score (Sigmoid) + LLM Probability.
+- **Safety**: Immediate stop on red flags (chest pain, fainting).
+- **Knowledge Base**: Uses static JSONs for safe, consistent recommendations.
