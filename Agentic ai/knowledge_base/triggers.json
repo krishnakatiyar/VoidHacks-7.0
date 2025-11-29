@@ -1,0 +1,31 @@
+{
+    "forget_recent": [
+        "Poor sleep quality",
+        "High stress levels",
+        "Dehydration",
+        "Unmanaged blood sugar"
+    ],
+    "daily_task_difficulty": [
+        "Fatigue",
+        "Anxiety",
+        "Vision problems",
+        "Lack of routine"
+    ],
+    "confused_time_place": [
+        "Medication side effects",
+        "Infection (UTI)",
+        "Vitamin deficiency",
+        "Dehydration"
+    ],
+    "disorientation_freq": [
+        "Blood pressure fluctuations",
+        "Low blood sugar",
+        "Inner ear issues"
+    ],
+    "mood_low": [
+        "Social isolation",
+        "Chronic pain",
+        "Thyroid issues",
+        "Lack of sunlight"
+    ]
+}

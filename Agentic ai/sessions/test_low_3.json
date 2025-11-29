@@ -1,0 +1,155 @@
+{
+  "session_id": "test_low_3",
+  "created_at": "2025-11-28T17:37:48.037996",
+  "features": {
+    "forget_recent": "error_skipped",
+    "duration_months": "error_skipped",
+    "daily_task_difficulty": "error_skipped",
+    "confused_time_place": "error_skipped",
+    "family_history": null,
+    "diabetes": null,
+    "hypertension": null,
+    "disorientation_freq": null,
+    "sleep_hours": null,
+    "mood_low": null,
+    "weight_change": null
+  },
+  "normalized_features": {
+    "forget_recent": 0.0,
+    "duration_months": 0.0,
+    "daily_task_difficulty": 0.0,
+    "confused_time_place": 0.0,
+    "family_history": 0.0,
+    "diabetes": 0.0,
+    "hypertension": 0.0,
+    "disorientation_freq": 0.0,
+    "sleep_hours": 0.0,
+    "mood_low": 0.0,
+    "weight_change": 0.0
+  },
+  "questions_asked": [
+    {
+      "q": "forget_recent",
+      "answer": "No forgetting",
+      "ts": "2025-11-28T17:37:48.764899"
+    },
+    {
+      "q": "duration_months",
+      "answer": "No",
+      "ts": "2025-11-28T17:37:49.192385"
+    },
+    {
+      "q": "daily_task_difficulty",
+      "answer": "No",
+      "ts": "2025-11-28T17:37:49.675906"
+    },
+    {
+      "q": "confused_time_place",
+      "answer": "No",
+      "ts": "2025-11-28T17:37:50.190090"
+    },
+    {
+      "q": "family_history",
+      "answer": "Just tired",
+      "ts": "2025-11-28T17:45:49.355656"
+    },
+    {
+      "q": "family_history",
+      "answer": "Just tired",
+      "ts": "2025-11-28T18:03:35.640905"
+    }
+  ],
+  "rounds": 5,
+  "is_finished": true,
+  "final_report": {
+    "type": "final_report",
+    "detected_condition": "AlzheimerRisk",
+    "risk_level": "Low",
+    "probability": 0.34,
+    "symptom_trigger_report": "Based on the information provided, there's a low risk of Alzheimer's. Since you reported occasional difficulty with daily tasks and some recent forgetfulness, it's good to be aware of potential triggers. These could include poor sleep, high stress, or even vision problems. Addressing these factors can help improve your cognitive well-being. Let's focus on some lifestyle adjustments to support your brain health!",
+    "exercise_meditation_yoga_plan": [
+      {
+        "name": "Brisk Walking",
+        "duration_mins": 30,
+        "frequency": "5 days/week"
+      },
+      {
+        "name": "Anulom Vilom (Pranayama)",
+        "duration_mins": 10,
+        "frequency": "daily"
+      },
+      {
+        "name": "Vrikshasana (Tree Pose)",
+        "duration_mins": 5,
+        "frequency": "alternate days"
+      },
+      {
+        "name": "5-Minute Breath Focus",
+        "duration_mins": 5,
+        "frequency": "As needed"
+      }
+    ],
+    "safe_medicine_info": [
+      {
+        "name": "Vitamin B12",
+        "short_note": "May help cognitive health if deficient. Consult your doctor before starting."
+      },
+      {
+        "name": "Omega-3 Fatty Acids",
+        "short_note": "Supports brain health. Consult doctor if on blood thinners."
+      }
+    ],
+    "motivation": "It's great that you're taking proactive steps to understand your cognitive health! Keep up the healthy habits, and remember even small changes can make a big difference.",
+    "disclaimer": "I am an AI assistant, not a doctor. Consult a specialist for diagnosis and treatment.",
+    "session_summary": {
+      "features": {
+        "forget_recent": 0.0,
+        "duration_months": 0.0,
+        "daily_task_difficulty": 0.0,
+        "confused_time_place": 0.0,
+        "family_history": 0.0,
+        "diabetes": 0.0,
+        "hypertension": 0.0,
+        "disorientation_freq": 0.0,
+        "sleep_hours": 0.0,
+        "mood_low": 0.0,
+        "weight_change": 0.0
+      },
+      "questions_asked": [
+        {
+          "q": "forget_recent",
+          "answer": "No forgetting",
+          "ts": "2025-11-28T17:37:48.764899"
+        },
+        {
+          "q": "duration_months",
+          "answer": "No",
+          "ts": "2025-11-28T17:37:49.192385"
+        },
+        {
+          "q": "daily_task_difficulty",
+          "answer": "No",
+          "ts": "2025-11-28T17:37:49.675906"
+        },
+        {
+          "q": "confused_time_place",
+          "answer": "No",
+          "ts": "2025-11-28T17:37:50.190090"
+        },
+        {
+          "q": "family_history",
+          "answer": "Just tired",
+          "ts": "2025-11-28T17:45:49.355656"
+        },
+        {
+          "q": "family_history",
+          "answer": "Just tired",
+          "ts": "2025-11-28T18:03:35.640905"
+        }
+      ],
+      "rounds": 5
+    },
+    "session_id": "test_low_3"
+  },
+  "last_question_target": "family_history"
+}

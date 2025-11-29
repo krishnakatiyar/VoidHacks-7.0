@@ -1,0 +1,159 @@
+{
+  "session_id": "test_low_2",
+  "created_at": "2025-11-28T17:37:44.865470",
+  "features": {
+    "forget_recent": "error_skipped",
+    "duration_months": "error_skipped",
+    "daily_task_difficulty": "error_skipped",
+    "confused_time_place": "error_skipped",
+    "family_history": null,
+    "diabetes": null,
+    "hypertension": null,
+    "disorientation_freq": null,
+    "sleep_hours": null,
+    "mood_low": null,
+    "weight_change": null
+  },
+  "normalized_features": {
+    "forget_recent": 0.0,
+    "duration_months": 0.0,
+    "daily_task_difficulty": 0.0,
+    "confused_time_place": 0.0,
+    "family_history": 0.0,
+    "diabetes": 0.0,
+    "hypertension": 0.0,
+    "disorientation_freq": 0.0,
+    "sleep_hours": 0.0,
+    "mood_low": 0.0,
+    "weight_change": 0.0
+  },
+  "questions_asked": [
+    {
+      "q": "forget_recent",
+      "answer": "No family history",
+      "ts": "2025-11-28T17:37:46.503424"
+    },
+    {
+      "q": "duration_months",
+      "answer": "No confusion",
+      "ts": "2025-11-28T17:37:46.941914"
+    },
+    {
+      "q": "daily_task_difficulty",
+      "answer": "No daily task issues",
+      "ts": "2025-11-28T17:37:47.420878"
+    },
+    {
+      "q": "confused_time_place",
+      "answer": "No",
+      "ts": "2025-11-28T17:37:47.853989"
+    },
+    {
+      "q": "family_history",
+      "answer": "I sleep well",
+      "ts": "2025-11-28T17:45:39.117639"
+    },
+    {
+      "q": "family_history",
+      "answer": "I sleep well",
+      "ts": "2025-11-28T18:03:26.117954"
+    }
+  ],
+  "rounds": 5,
+  "is_finished": true,
+  "final_report": {
+    "type": "final_report",
+    "detected_condition": "AlzheimerRisk",
+    "risk_level": "Low",
+    "probability": 0.34,
+    "symptom_trigger_report": "Based on your responses, there's a low risk of Alzheimer's. We skipped questions about recent forgetfulness, symptom duration, task difficulty, and confusion. Common triggers for forgetfulness include poor sleep, stress, dehydration, and blood sugar issues. Task difficulty can be linked to fatigue, anxiety, vision problems, or lack of routine. Confusion may arise from medication, infection, vitamin deficiency, or dehydration. Keep an eye on your symptoms and consider discussing them with a healthcare provider.",
+    "exercise_meditation_yoga_plan": [
+      {
+        "name": "Brisk Walking",
+        "duration_mins": 30,
+        "frequency": "5 days/week"
+      },
+      {
+        "name": "Anulom Vilom (Pranayama)",
+        "duration_mins": 10,
+        "frequency": "daily"
+      },
+      {
+        "name": "Bhramari Pranayama (Humming Bee Breath)",
+        "duration_mins": 5,
+        "frequency": "daily"
+      },
+      {
+        "name": "5-Minute Breath Focus",
+        "duration_mins": 5,
+        "frequency": "daily"
+      }
+    ],
+    "safe_medicine_info": [
+      {
+        "name": "Vitamin B12",
+        "short_note": "May help cognitive health if deficient. Consult your doctor before starting."
+      },
+      {
+        "name": "Omega-3 Fatty Acids",
+        "short_note": "Supports brain health. Consult doctor if on blood thinners."
+      },
+      {
+        "name": "Vitamin D3",
+        "short_note": "Essential for brain function. Check levels with a doctor first."
+      }
+    ],
+    "motivation": "Maintaining a healthy lifestyle is key! Keep up the good work and stay proactive about your well-being.",
+    "disclaimer": "I am an AI assistant, not a doctor. Consult a specialist for diagnosis and treatment.",
+    "session_summary": {
+      "features": {
+        "forget_recent": 0.0,
+        "duration_months": 0.0,
+        "daily_task_difficulty": 0.0,
+        "confused_time_place": 0.0,
+        "family_history": 0.0,
+        "diabetes": 0.0,
+        "hypertension": 0.0,
+        "disorientation_freq": 0.0,
+        "sleep_hours": 0.0,
+        "mood_low": 0.0,
+        "weight_change": 0.0
+      },
+      "questions_asked": [
+        {
+          "q": "forget_recent",
+          "answer": "No family history",
+          "ts": "2025-11-28T17:37:46.503424"
+        },
+        {
+          "q": "duration_months",
+          "answer": "No confusion",
+          "ts": "2025-11-28T17:37:46.941914"
+        },
+        {
+          "q": "daily_task_difficulty",
+          "answer": "No daily task issues",
+          "ts": "2025-11-28T17:37:47.420878"
+        },
+        {
+          "q": "confused_time_place",
+          "answer": "No",
+          "ts": "2025-11-28T17:37:47.853989"
+        },
+        {
+          "q": "family_history",
+          "answer": "I sleep well",
+          "ts": "2025-11-28T17:45:39.117639"
+        },
+        {
+          "q": "family_history",
+          "answer": "I sleep well",
+          "ts": "2025-11-28T18:03:26.117954"
+        }
+      ],
+      "rounds": 5
+    },
+    "session_id": "test_low_2"
+  },
+  "last_question_target": "family_history"
+}

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "5-Minute Breath Focus",
+        "script_short": "Sit comfortably. Close your eyes. Inhale deeply for 4 counts, hold for 4, exhale for 4. Repeat. Focus only on the sound of your breath.",
+        "duration_mins": 5
+    },
+    {
+        "name": "10-Minute Body Scan",
+        "script_short": "Lie down. Bring attention to your toes, then slowly move up to your head. Release tension in each part as you breathe out.",
+        "duration_mins": 10
+    }
+]

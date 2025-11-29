@@ -1,0 +1,150 @@
+{
+  "session_id": "test_low_1",
+  "created_at": "2025-11-28T17:37:40.907888",
+  "features": {
+    "forget_recent": "no",
+    "duration_months": "error_skipped",
+    "daily_task_difficulty": "no",
+    "confused_time_place": "no",
+    "family_history": "no",
+    "diabetes": null,
+    "hypertension": null,
+    "disorientation_freq": null,
+    "sleep_hours": null,
+    "mood_low": null,
+    "weight_change": null
+  },
+  "normalized_features": {
+    "forget_recent": 0.0,
+    "duration_months": 0.0,
+    "daily_task_difficulty": 0.0,
+    "confused_time_place": 0.0,
+    "family_history": 0.0,
+    "diabetes": 0.0,
+    "hypertension": 0.0,
+    "disorientation_freq": 0.0,
+    "sleep_hours": 0.0,
+    "mood_low": 0.0,
+    "weight_change": 0.0
+  },
+  "questions_asked": [
+    {
+      "q": "forget_recent",
+      "answer": "No",
+      "ts": "2025-11-28T17:37:41.994551"
+    },
+    {
+      "q": "duration_months",
+      "answer": "No",
+      "ts": "2025-11-28T17:37:42.434212"
+    },
+    {
+      "q": "daily_task_difficulty",
+      "answer": "No",
+      "ts": "2025-11-28T17:37:42.939365"
+    },
+    {
+      "q": "confused_time_place",
+      "answer": "No",
+      "ts": "2025-11-28T17:37:43.431514"
+    },
+    {
+      "q": "family_history",
+      "answer": "No memory issues",
+      "ts": "2025-11-28T17:45:28.872609"
+    },
+    {
+      "q": "family_history",
+      "answer": "No memory issues",
+      "ts": "2025-11-28T18:03:17.210733"
+    }
+  ],
+  "rounds": 5,
+  "is_finished": true,
+  "final_report": {
+    "type": "final_report",
+    "detected_condition": "AlzheimerRisk",
+    "risk_level": "Low",
+    "probability": 0.04,
+    "symptom_trigger_report": "Based on your responses, common triggers related to forgetfulness could be factors such as poor sleep or high stress levels. Difficulty with daily tasks can sometimes stem from fatigue or anxiety. While you didn't report these issues, it's good to be aware of potential triggers.",
+    "exercise_meditation_yoga_plan": [
+      {
+        "name": "Brisk Walking",
+        "duration_mins": 30,
+        "frequency": "5 days/week"
+      },
+      {
+        "name": "Anulom Vilom (Pranayama)",
+        "duration_mins": 10,
+        "frequency": "daily"
+      },
+      {
+        "name": "Bhramari Pranayama (Humming Bee Breath)",
+        "duration_mins": 5,
+        "frequency": "daily"
+      }
+    ],
+    "safe_medicine_info": [
+      {
+        "name": "Vitamin B12",
+        "short_note": "May help cognitive health if deficient. Consult your doctor before starting."
+      },
+      {
+        "name": "Omega-3 Fatty Acids",
+        "short_note": "Supports brain health. Consult doctor if on blood thinners."
+      }
+    ],
+    "motivation": "Maintaining a healthy lifestyle can really boost your overall well-being! Keep up the great work, and remember even small changes can make a big difference.",
+    "disclaimer": "I am an AI assistant, not a doctor. Consult a specialist for diagnosis and treatment.",
+    "session_summary": {
+      "features": {
+        "forget_recent": 0.0,
+        "duration_months": 0.0,
+        "daily_task_difficulty": 0.0,
+        "confused_time_place": 0.0,
+        "family_history": 0.0,
+        "diabetes": 0.0,
+        "hypertension": 0.0,
+        "disorientation_freq": 0.0,
+        "sleep_hours": 0.0,
+        "mood_low": 0.0,
+        "weight_change": 0.0
+      },
+      "questions_asked": [
+        {
+          "q": "forget_recent",
+          "answer": "No",
+          "ts": "2025-11-28T17:37:41.994551"
+        },
+        {
+          "q": "duration_months",
+          "answer": "No",
+          "ts": "2025-11-28T17:37:42.434212"
+        },
+        {
+          "q": "daily_task_difficulty",
+          "answer": "No",
+          "ts": "2025-11-28T17:37:42.939365"
+        },
+        {
+          "q": "confused_time_place",
+          "answer": "No",
+          "ts": "2025-11-28T17:37:43.431514"
+        },
+        {
+          "q": "family_history",
+          "answer": "No memory issues",
+          "ts": "2025-11-28T17:45:28.872609"
+        },
+        {
+          "q": "family_history",
+          "answer": "No memory issues",
+          "ts": "2025-11-28T18:03:17.210733"
+        }
+      ],
+      "rounds": 5
+    },
+    "session_id": "test_low_1"
+  },
+  "last_question_target": "family_history"
+}
